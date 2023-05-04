@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>
+        Widget
+    </title> 
+    <script src="pxweb.js"></script>
+    <link rel="stylesheet" href= "pxweb.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body style="background-image: url(https://img.freepik.com/free-vector/grunge-watercolor-background-using-pastel-colours_1048-6530.jpg?w=996&t=st=1683237593~exp=1683238193~hmac=cb39b806fa243d25c736dde0a6ec320206c7ce135f9b8047a39fb6b1cc1a7006);">
+    
+  <div class="menur"><ul>
+    <li><a href="pxwebpage1.html">Products</a></li>
+    <li><a href="pxwebpage2.html">Widgets</a></li>
+    <li><a href="pxwebpage3.html">Contact</a></li>
+    <li><a href="index.html">Logout</a></li>
+</ul></div>
+
+        <h1 style="margin:20px;">DRAG WIDGETS</h1>
+
+    <div class="dragred" class="ui-widget-content">
+        <p>Drag red</p>
+      </div>
+      <div class="dragblue" class="ui-widget-content">
+        <p>Drag blue</p>
+      </div>
+      <div class="draggreen" class="ui-widget-content">
+        <p>Drag Green</p>
+      </div>
+
+
+<script>
+    $( function() {
+        $( ".dragred").draggable({
+            stop : function r() {}
+        })
+      } );
+
+      $( function() {
+        $( ".dragblue").draggable({
+            stop : function r() {}
+        })
+      } );
+
+      $( function() {
+        $( ".draggreen").draggable({
+            stop : function r() {}
+        })
+      } );
+
+    </script>
+</body>
+</html>
