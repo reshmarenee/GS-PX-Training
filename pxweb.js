@@ -11,6 +11,23 @@ function allowlogin(usermail)
     if (a == 'reshmarenee@gmail.com' || a == 'reshmarenee@gainsight.com' || a == 'demoreshma@gainsight.com')
     { 
         var b= a.substr(0,5);
+       
+       //passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": b, // Required for logged in app users
+    "email": a,
+    "firstName": "John",
+    "lastName": "Smith"
+  },
+  {
+  //Account Fields
+    "id":"IBM", //Required
+    "name":"IBM-India"
+ });
+ 
+        
         location.href = "pxwebpage1.html";
     }
     else if(a == '')
